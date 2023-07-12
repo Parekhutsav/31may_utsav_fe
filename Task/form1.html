@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+</head>
+<body>
+    <center>
+    <table>
+    <form action="" method="post">
+        <tr>
+            <td>
+                <label for="fnm">First Name</label>
+                <input type="text" name="fnm" required>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="lnm">Last Name</label>
+                <input type="text" name="lnm" required>
+                <br>
+            </td>
+        </tr>
+       <tr>
+        <td>
+            <label for="email">Email</label>
+        <input type="email" name="email" required>
+        <br>
+        </td>
+       </tr>
+        <tr>
+            <td>
+                <label for="tno">Telephone Number</label>
+                <input type="tel" name="tno" minlength="10" maxlength="10" pattern="[0-9]{10}" required>
+                <br>
+            </td>
+        </tr>
+      <tr>
+        <td>
+            <label for="cmt">Comment</label>
+            <textarea name="cmt" id="" cols="20" rows="5" required></textarea>
+            <br>    <br>
+        </td>
+      </tr>
+       <tr>
+        <td>
+            <center><input type="submit" value="Submit Form"></center>
+        </td>
+       </tr>
+       
+    </form>
+</table>
+</center>
+</body>
+</html>
