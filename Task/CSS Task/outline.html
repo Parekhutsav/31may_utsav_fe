@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+    <style>
+        div{
+            background-image: url("https://img.freepik.com/free-vector/copy-space-bokeh-spring-lights-background_52683-55649.jpg?w=2000");
+            border: 50px solid black ;    
+            height: 500px;
+            width: 500px;
+            border-image: url("https://img.freepik.com/premium-vector/elegant-baroque-page-border-decorative-ornate-frame_543062-2238.jpg?w=2000") 200 round;
+         }
+         .sub{
+            margin: 400px 200px;
+            border-radius: 10px;
+            color: blue;
+            border-color: blue;
+            background: lightskyblue;
+            height: 50px;
+            width: 100px;
+         }
+         .sub:hover{
+            outline: 5px solid navy;
+            outline-style:inset;
+            outline-offset: 10px;
+            background-color: aqua;
+         }
+    </style>
+</head>
+<body>
+        <div>
+            <button class="sub">Submit</button>
+        </div>
+</body>
+</html>
