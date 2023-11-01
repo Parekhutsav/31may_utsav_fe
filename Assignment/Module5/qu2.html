@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="qu">
+        Qu-2 How to embed audio and video in a webpage?
+    </header>
+    <section class="ans">
+        <p>->In HTML5 we can add audio and video with &lt;audio&gt; and &lt;video&gt; tag. <br><br>
+           [1.]Audio:- <br>
+            &nbsp;&nbsp;->Audio tag is used to display audio in webpage. <br>
+            &nbsp;&nbsp;->In audio tag we have such attributes like, muted,controls,loop,autoplay etc. <br>
+            &nbsp;&nbsp;->We can add audio path in &lt;source&gt; tag which is into the audio tag. <br>
+            &nbsp;&nbsp;->Like, <br> 
+            &nbsp;&nbsp;  &lt;audio controls muted&gt; <br>
+            &nbsp;&nbsp;&nbsp;&lt;source src="path" type="audio/mp3"&gt; <br>  
+            &nbsp;&nbsp;  &lt;/audio&gt; <br>
+            &nbsp;&nbsp;->Ex:- <br>
+            <audio controls autoplay muted loop>
+                <source src="Mann Jogiya - Arijit Singh.mp3" type="audio/mp3">
+            </audio> <br> <br>
+            [2.]Video:- <br>
+            &nbsp;&nbsp;->Video tag is used to display video in webpage. <br>
+            &nbsp;&nbsp;->In video tag we have such attributes like, muted,controls,loop etc. <br>
+            &nbsp;&nbsp;->We can also adjust video height and width. <br>
+            &nbsp;&nbsp;->Also we can give thumbnail or poster to the video. <br>
+            &nbsp;&nbsp;->We can add video path in &lt;source&gt; tag which is into the video tag. <br>
+            &nbsp;&nbsp;->Like, <br> 
+            &nbsp;&nbsp;  &lt;video controls muted&gt; <br>
+            &nbsp;&nbsp;&nbsp;&lt;source src="path" type="video/mp4"&gt; <br>  
+            &nbsp;&nbsp;  &lt;/video&gt; <br>
+            &nbsp;&nbsp;->Ex:- <br>
+            <video controls muted loop height="250px" width="300px" poster="download.jpeg ">
+                <source src="videoplayback.mp4">
+            </video>
+        </p> 
+    </section>
+</body>
+</html>
