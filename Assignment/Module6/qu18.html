@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu18</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h3,
+        h5 {
+            text-align: center;
+        }
+
+        button {
+            position: absolute;
+            left: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="que">
+        <h1>Q-18 Create result</h1>
+    </div>
+    <h3>Marksheet for Information Technology</h3>
+    <h5>Enter Marks</h5>
+    <form action="">
+        <label for="cl">1. C Language:</label>
+        <input type="text" name="cl" id="m1"> <br><br>
+        <label for="cpp">2. C++ Programming:</label>
+        <input type="text" name="cpp" id="m2"><br><br>
+        <label for="db">3. Database:</label>
+        <input type="text" name="db" id="m3"><br><br>
+        <label for="html">4. HTML:</label>
+        <input type="text" name="html" id="m4"><br><br>
+        <label for="css">5. CSS:</label>
+        <input type="text" name="css" id="m5"><br><br>
+        <label for="php">6. PHP:</label>
+        <input type="text" name="php" id="m6"><br><br>
+        <label for="java">7. Core Java:</label>
+        <input type="text" name="java" id="m7"><br><br>
+        <button type="button" onclick="mark()">Result</button>
+    </form>
+    <div id="answer"></div>
+    <script>
+        function mark() {
+            let c = parseInt(document.getElementById("m1").value);
+            let cpp = parseInt(document.getElementById("m2").value);
+            let db = parseInt(document.getElementById("m3").value);
+            let html = parseInt(document.getElementById("m4").value);
+            let css = parseInt(document.getElementById("m5").value);
+            let php = parseInt(document.getElementById("m6").value);
+            let java = parseInt(document.getElementById("m7").value);
+            let result = c + cpp + db + html + css + php + java;
+            let per = (result / 350) * 50;
+            let r1 = document.getElementById('answer');
+            r1.innerHTML = "Total is :"+result+"<br>Percentage is:"+per.toFixed(2)+"%";
+        }
+    </script>
+</body>
+
+</html>

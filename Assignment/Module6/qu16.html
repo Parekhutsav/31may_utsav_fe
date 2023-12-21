@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu16</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="que">
+        <h1>Q-16  Create password field with show hide functionalities</h1>
+    </div>
+    <div class="ans">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password"> <br> <br>
+        <button onclick="showHide()" id="btnShowHide">Show/Hide Password</button><br><br>
+     </div>
+    <script>
+        function showHide() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+                document.getElementById("btnShowHide").innerHTML = "Hide Password";
+                } else {
+                    x.type = "password";
+                    document.getElementById("btnShowHide").innerHTML = "Show Password";
+                    }
+                    }
+    </script>
+</body>
+</html>

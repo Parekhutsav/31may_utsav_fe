@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu6</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .new-element{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="que">
+        <h1>
+            Q-6 Write the code for adding new elements dynamically?
+        </h1>
+    </div>
+    <div class="ans">
+        <p>
+            Ans: <br>
+                document.getElementById('addDivButton').addEventListener('click',function(){ <br>
+                var a=document.createElement('div'); <br>
+                a.className='new-element'; <br>
+                a.innerHTML='New element created'; <br>
+                document.body.appendChild(a); <br>
+                 })    
+        </p>
+        <button id="addDivButton">Add element</button>
+    </div>
+    <script>
+        document.getElementById('addDivButton').addEventListener('click',function(){
+            var a=document.createElement('div');
+            a.className='new-element';
+            a.innerHTML='New element created';
+            document.body.appendChild(a);
+        })
+    </script>
+</body>
+</html>

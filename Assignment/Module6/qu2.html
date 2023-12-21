@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #h1 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="que">
+        <h1>Q-2 What is the use of isNaN function?</h1>
+    </div>
+    <div class="ans">
+        <p>
+            Ans: <br>
+            ->The isNaN() function in JavaScript is used to determine whether a given variable or value is NaN (Not a Number).
+            ->In JavaScript NaN means Not a Number. <br>
+            ->The 'isNaN' is a special value in JavaScript  <br>
+            ->'isNaN' function return boolean value as output. <br>
+            <b>Ex: <br>
+                &lt;script&gt; <br>
+                    &nbsp;&nbsp;&nbsp;
+                    var x = "Hello"; <br>
+                    &nbsp;&nbsp;&nbsp;
+                    if(isNaN(x))  <br>
+                    &nbsp;&nbsp;&nbsp;
+                        { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            document.write("It is not a number"); <br>
+                    &nbsp;&nbsp;&nbsp;
+                        } <br>
+                    &nbsp;&nbsp;&nbsp;
+                        else <br>
+                    &nbsp;&nbsp;&nbsp;
+                        { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            document.write("It is a number"); <br>
+                    &nbsp;&nbsp;&nbsp;
+                        } <br>
+                &lt;/script&gt;
+            </b> 
+        </p>
+        <h1 id="h1"></h1>
+        <script>
+            var x="Hello";
+            if(isNaN(x)){
+                document.getElementById('h1').innerHTML="Output:"+"It is not a number";
+                }else{
+                    document.write("It is a number");
+                    }
+        </script>
+    </div>
+</body>
+</html>

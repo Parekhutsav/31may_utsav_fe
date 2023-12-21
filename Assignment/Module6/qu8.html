@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="que">
+        <h1>Q-8 How can the style/class of an element be changed?</h1>
+    </div>
+    <div class="ans">
+        <p>
+            Ans: <br>
+            ->In HTML and CSS, you can change the style or class of an element using JavaScript. <br>
+            ->You can use the `getElementById()` method to select the desired element by its ID. <br>
+        </p>
+        <p>Ex: <br>
+                var headingElement = document.getElementById("myHeading"); <br>
+                headingElement.style.color = "blue"; <br>
+                headingElement.style.fontWeight = "normal"; <br>
+        </p>
+            <h2 id="myHeading">This is a Heading</h2>
+            <button onclick="changeStyle()">Change Style</button>
+            <script>
+                function changeStyle() {
+                // Get the element by its ID
+                var headingElement = document.getElementById("myHeading");
+                // Change the style dynamically
+                headingElement.style.color = "blue";
+                headingElement.style.fontWeight= "normal";
+            }
+            </script>
+    </div>
+</body>
+</html>

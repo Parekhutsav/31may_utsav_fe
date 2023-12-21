@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.que{
+    height: auto;
+    width: 100%;
+    background: lightgreen;
+    color: black;
+    font-size: 23px;
+    font-family: sans-serif;
+    margin: auto auto;
+}
+.que h1{
+    font-weight:800;
+    text-align: center;
+}
+.ans{
+    height: auto;
+    width: auto;
+    background: lightgoldenrodyellow;
+    margin: 30px 40px 20px 40px;
+}
+.ans p{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    line-height: 50px;
+    color: darkgoldenrod;
+}

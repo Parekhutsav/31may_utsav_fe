@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu16</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="que">
+        <h1>Q-15 What are the disadvantages of using innerHTML in JavaScript?</h1>
+    </div>
+    <div class="ans">
+        <p>
+            Ans: <br>
+            ->When using 'innerHTML' the text is printed to the tag and old text of tag is remove and print new text. <br>
+            ->Some browser not fully support innerHTML. <br>
+            Ex: <br>
+                &lt;div id="d1"&gt; <br>
+                    &lt;p&gt;This is some content.&lt;/p&gt; <br>
+                &lt;/div&gt; <br>
+                &lt;script&gt; <br>
+                    document.getElementById('d1').innerHTML+='&lt;p&gt;Appended Content&lt;/p&gt;' <br>
+                &lt;/script&gt; <br>
+        </p>
+    </div>
+</body>
+</html>
