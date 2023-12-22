@@ -1,0 +1,56 @@
+.conteiner {
+    height: 85vh;
+    width: 100%;
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-rows: repeat(2, 40%);
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    align-content: center;
+    gap: 10px 10px;
+    background-color: whitesmoke;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.card .img,
+.card .img {
+    height: 50%;
+    width: 100%;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+}
+
+.info {
+    position: relative;
+}
+
+.info .sub_info {
+    position: absolute;
+    top: 80px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    height: inherit;
+    width: 40%;
+}
+
+.btn button {
+    padding: 5px 5px;
+}
+
+.nm {
+    height: inherit;
+    width: 20%;
+}

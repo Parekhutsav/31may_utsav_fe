@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+.conteiner img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(60%);
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+}
+
+.conteiner .info {
+    position: absolute;
+    top: 150px;
+    left: 37%;
+    text-align: center;
+}
+
+.conteiner .info h1 {
+    font-size: 40px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.conteiner .info p {
+    font-size: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.conteiner .info .point {
+    margin: auto;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: red;
+    position: relative;
+    top: 10px;
+}
+
+.conteiner .info .point::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    height: 2px;
+    width: 100px;
+    margin: 0% 30px;
+    background: #fff;
+    right: 0;
+}
+
+.conteiner .info .point::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    height: 2px;
+    width: 100px;
+    background: #fff;
+    margin: 0% 30px;
+    left: 0;
+}
+
+.conteiner .person {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: red;
+    /* text-align: center; */
+    position: absolute;
+    z-index: 1;
+}
+
+.conteiner .person img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.conteiner .p-1 {
+    top: 390px;
+    left: 200px;
+}
+
+.conteiner .p-2 {
+    top: 350px;
+    left: 480px;
+    transform: scale(1.4);
+}
+
+.conteiner .p-2::after {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 0.5px;
+    background: #fff;
+    top: 100%;
+    left: 50%;
+}
+
+.conteiner .detail {
+    text-align: center;
+    position: absolute;
+    top: 480px;
+    left: 425px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.conteiner .detail h3 {
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.conteiner .detail p {
+    font-size: 14px;
+}
+
+.conteiner .p-3 {
+    top: 400px;
+    left: 750px;
+}
+
+.conteiner .p-4 {
+    top: 440px;
+    left: 1020px;
+}
+
+.conteiner .p-5 {
+    top: 360px;
+    left: 1300px;
+}
