@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="que">
+        <h1>Q-2 How to Apply CSS Using JQuery, How to Add Class and Remove Class in 
+            Jquery, JQuery Animation?</h1>
+    </div>
+    <div class="ans">
+        <p>
+            Ans: <br>
+            ->To apply CSS using jQuery, you can use the .css() method which is used to get or set a style property for the selected content. <br>
+            ->To apply CSS using jQuery, you can use the .addClass() method to add a class to an element. <br>
+            ->the .removeClass() method to remove a class from an element. <br>
+            ->The animate() function of jQuery can be used for creating animations on the web page. <br><br>
+            [1] Apply CSS <br>
+            $("#id").css("property","value"); <br>
+            Example : <br>
+            $("p").css("color", "red"); // Changes all paragraphs color to red <br><br>
+            [2] Add/Remove Class <br>
+            //Adding a class <br>
+            $(".classname").addClass("newclass"); <br>
+            Example : <br>
+            $("button").click(function(){ <br>
+                $(this).addClass("active"); // Adding active class to clicked button <br>
+                }); <br><br>
+            //Removing a class <br>
+            $(".classname").removeClass("oldclass"); <br>
+            Example : <br>
+            $("button").click(function(){ <br>
+                $(this).removeClass("active"); // Removes active class from mouse outed button <br>
+                }); <br><br>
+            [3] jQuery animation <br>
+            $("selector").animate({propertyname:"value"},speed); <br>
+            Example : <br>
+            $("#box").click(function(){ <br>
+                $(this).animate({left:'+=150px', opacity:'0.5'}, "slow"); <br>
+                });
+        </p>
+    </div>
+</body>
+</html>

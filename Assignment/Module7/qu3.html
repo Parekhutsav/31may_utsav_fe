@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .slider-container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Optional: Add styling for navigation buttons */
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .slider-nav button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .slider img {
+            margin-left: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="que">
+        <h1>Q-3 How to create slider with animation?</h1>
+    </div>
+<br><br>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgZfVqjo-NjCwqrI_I6HC3c8R-DH-P45gNMcuiw5FwKuQdF0cSPj7tYwLdL4QK6zlDFiI&usqp=CAU"
+                    alt="Slide 1"></div>
+            <div class="slide"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLD86t8BXuKR-kIZKtDQsKFsO5pqOzAiiJyvRWg6wzdDGZufSKp3n01ZL9--2o83qsbko&usqp=CAU"
+                    alt="Slide 2"></div>
+            <div class="slide"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsvvn9qnM2ScQwx_caOAW75UVjuup09zagyz072uaGgbU8vfQsw36vNbZNrwq-3ksNK2s&usqp=CAU"
+                    alt="Slide 3"></div>
+        </div>
+
+        <div class="slider-nav">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        function nextSlide() {
+            $('.slider').animate({ marginLeft: '-=100%' }, 500, function () {
+                $(this).append($('.slide:first')).css({ marginLeft: 0 });
+            });
+        }
+
+        function prevSlide() {
+            $('.slider').prepend($('.slide:last')).css({ marginLeft: '-100%' }).animate({ marginLeft: 0 }, 500);
+        }
+
+        setInterval(nextSlide, 2000); 
+    </script>
+</body>
+
+</html>
