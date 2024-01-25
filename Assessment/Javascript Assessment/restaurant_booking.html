@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Restaurant Booking Form</h2>
+    <form id="form">
+  
+
+
+        <!--  for booking type -->
+        <label for="bookingtype">Choice of Booking</label>
+        <select id="bookingtype" onchange="option()">
+            <option value="fullday">Full day booking</option>
+            <option value="halfday">Half day booking</option>
+            <option value="hourly">Hourly booking</option>
+        </select> <br><br>
+
+
+
+        <!--  for username -->
+        <label for="username">User name</label>
+        <input type="text" id="username" required> <br><br>
+
+
+
+        <!--  for mobilenumber -->
+        <label for="mobilenumber">Mobile Number</label>
+        <input type="tel" id="mobilenumber" required><br><br>
+
+
+
+        <!-- for email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" required> <br><br>
+
+
+
+        <!-- number of person -->
+        <label for="noofperson">No of person</label>
+        <input type="number" id="noofperson" required> <br><br>
+
+
+
+        <!-- for date -->
+        <div id="datecontainer">
+            <label for="date">Date</label>
+            <input type="date" id="date" required> <br><br>
+        </div>
+
+
+
+        <!-- for time -->
+        <div id="timecontainer">
+            <label for="time">Time</label>
+            <input type="time" id="time"> <br><br>
+        </div>
+
+
+
+        <!-- for slot -->
+        <div id="slotcontainer">
+            <label for="slot">Sloat:</label>
+            <select id="slot">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select> <br><br>
+        </div>
+
+
+
+        <!-- submit button -->
+        <input type="submit" value="submit">
+
+
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
