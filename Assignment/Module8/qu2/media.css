@@ -1,0 +1,18 @@
+@media only screen  and (max-width: 500px) {
+    /* Styles for screens that are at least 500 pixels wide */
+
+    .slider{
+        height: 150px;
+        width: auto;
+    }
+    .slider img{
+        height: 150px;
+        width: 100%;
+    }
+    #product{
+        flex-direction: column;
+    }
+    #c1{
+        margin-left: 10%;
+    }
+}
